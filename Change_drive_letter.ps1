@@ -1,5 +1,5 @@
-﻿[CmdletBinding()]
-Param(
+function ChangeDriveLetter
+ { Param(
 [Parameter(Mandatory=$True,
 Position=1)]
 [string]
@@ -32,4 +32,9 @@ Write-Output "Error: Drive Letter $NewDrvLetter Already In Use"
 else
 {
 Write-Output "Error: No CD/DVD Drive Available !!"
-}
+}}
+
+ChangeDriveLetter -NewDrvLetter N:
+
+
+
